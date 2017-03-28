@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="16dp"
+    tools:context="com.beat.restaurantapp.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/userEmail"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Enter your name"
+            android:id="@+id/nameTextField"
+            />
+
+        <EditText
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="address"
+            android:id="@+id/addressTextField"
+            />
+        <EditText
+            android:layout_margin="15dp"
+            android:id="@+id/ageTextField"
+            android:hint="Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_margin="15dp"
+            android:id="@+id/saveInfoButton"
+            android:text="Save Information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="Logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/logoutButton" />
+
+        <Button
+            android:layout_margin="15dp"
+            android:id="@+id/restaurantPanel"
+            android:text="View Restaurant Panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>
